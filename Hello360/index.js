@@ -1,15 +1,27 @@
 import React from 'react';
-import { AppRegistry, StyleSheet, Text, View, } from 'react-360';
+import { AppRegistry, StyleSheet, Text, View, VrButton } from 'react-360';
 //import { Surfaces } from './Surfaces.js';
 
 export default class Hello360 extends React.Component {
+  state = {
+    counter : 0
+  };
+
+  _incrementCounter = () => {
+    this.setState({
+      counter : (this.state.counter += 1)
+    });
+  };
+
   render() {
     return (
       <View style={styles.panel}>
         <View style={styles.greetingBox}>
-          <Text style={styles.greeting}>
-            Hello Atlanta JavaScript!
-          </Text>
+         <VrButton onClick={this._incrementCounter}>
+           <Text style={styles.greeting}>Hello Atlanta JavaScript! </Text>
+            <Text style={styles.greeting}>Welcome To Our Counter! </Text>
+             <Text style={styles.gretting}>You've clicked me {this.state.counter} times.</Text>
+          </VrButton>
         </View>
       </View>
     );
