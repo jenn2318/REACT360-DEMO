@@ -8,7 +8,7 @@ export default class Hello360 extends React.Component {
       <View style={styles.panel}>
         <View style={styles.greetingBox}>
           <Text style={styles.greeting}>
-            Hello Women Techmakers Atlanta!
+            Hello Atlanta JavaScript!
           </Text>
         </View>
       </View>
