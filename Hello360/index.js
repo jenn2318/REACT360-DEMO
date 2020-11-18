@@ -18,7 +18,7 @@ export default class Hello360 extends React.Component {
       <View style={styles.panel}>
         <View style={styles.greetingBox}>
          <VrButton onClick={this._incrementCounter}>
-           <Text style={styles.greeting}>Hello Atlanta JavaScript! </Text>
+           <Text style={styles.greeting}>Hello Black Technology Mentorship Attendees! </Text>
             <Text style={styles.greeting}>Welcome To Our Counter! </Text>
              <Text style={styles.gretting}>You've clicked me {this.state.counter} times.</Text>
           </VrButton>
